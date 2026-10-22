@@ -23,7 +23,7 @@ def grupeaza(tinte):
     grupuri = {}
     for tinta in tinte:
         ip = tinta["ip"]
-        servicii_tinta = tinta["servicii"]
+        servicii_tinta = tinta.get("servicii", {})
         for serviciu, porturi in servicii_tinta.items():
             for port in porturi:
                 numar = port_valid(port)

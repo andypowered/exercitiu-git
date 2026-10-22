@@ -26,7 +26,7 @@ def grupeaza(tinte):
         servicii_tinta = tinta["servicii"]
         for serviciu, porturi in servicii_tinta.items():
             for port in porturi:
-                numar = int(port)
+                numar = port_valid(port)
                 if numar is None:
                     print("sar peste", ip, ":", "port invalid", port)
                     continue

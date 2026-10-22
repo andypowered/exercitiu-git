@@ -46,7 +46,7 @@ def peste_prag(tinte, prag):
                     porturi.append(numar)
         if porturi and max(porturi) > prag:
             rezultat.append(ip)
-    return []
+    return rezultat
 
 
 def scrie_raport(cale, date):

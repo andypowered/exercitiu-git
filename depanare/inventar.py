@@ -63,7 +63,7 @@ def main():
     a = p.parse_args()
 
     tinte = citeste_tinte(a.fisier)
-    print("Tinte citite: " + len(tinte))
+    print("Tinte citite: " + str(len(tinte)))
 
     grupuri = grupeaza(tinte)
     for serviciu, porturi in grupuri.items():

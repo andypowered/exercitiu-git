@@ -29,7 +29,7 @@ def grupeaza(tinte):
                 if numar is None:
                     print("sar peste", ip, ":", "port invalid", port)
                     continue
-                grupuri[serviciu] = [numar]
+                grupuri.setdefault(serviciu, []).append(numar)
     return grupuri
 
 
@@ -69,7 +69,7 @@ def main():
         print(serviciu + ":", porturi)
 
     peste = peste_prag(tinte, a.prag)
-    print("Peste", a.prag, ":", peste)
+    print("Peste " + str(a.prag) + ":", peste)
     scrie_raport("raport_inventar.json", {"tinte": len(tinte), "grupuri": grupuri, "peste_prag": peste})
 
 

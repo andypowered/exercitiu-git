@@ -62,7 +62,7 @@ def main():
     p.add_argument("--prag", default=1024)
     a = p.parse_args()
 
-      tinte = citeste_tinte(a.fisier)
+    tinte = citeste_tinte(a.fisier)
     print("Tinte citite: " + len(tinta))
 
     grupuri = grupeaza(tinte)

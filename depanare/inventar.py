@@ -8,8 +8,7 @@ def citeste_tinte(cale):
 
 
 def servicii(tinta):
-    if "servicii" in tinta:
-        tinta["servicii"]
+    return tinta.get("servicii", {})
 
 
 def port_valid(port):

@@ -58,7 +58,7 @@ def scrie_raport(cale, date):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("fisier")
-    p.add_argument("--prag", default=1024)
+    p.add_argument("--prag", type=int, default=1024)
     a = p.parse_args()
 
     tinte = citeste_tinte(a.fisier)
